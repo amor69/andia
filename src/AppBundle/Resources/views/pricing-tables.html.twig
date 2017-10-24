@@ -1,0 +1,303 @@
+{% extends '@App/base.html.twig' %}
+{% block body %}
+<!-- Top menu -->
+<nav class="navbar" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{ path('homepage') }}">Andia - a super cool design agency...</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="top-navbar-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+						<i class="fa fa-home"></i><br>Home <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-left" role="menu">
+						<li><a href="{{ path('homepage') }}">Home</a></li>
+						<li><a href="{{ path('homepage2') }}">Home 2</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="{{ path('portfolio') }}"><i class="fa fa-camera"></i><br>Portfolio</a>
+				</li>
+				<li>
+					<a href="{{ path('services') }}"><i class="fa fa-tasks"></i><br>Services</a>
+				</li>
+				<li>
+					<a href="{{ path('about') }}"><i class="fa fa-user"></i><br>About</a>
+				</li>
+				<li>
+					<a href="{{ path('contact') }}"><i class="fa fa-envelope"></i><br>Contact</a>
+				</li>
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+						<i class="fa fa-paperclip"></i><br>Pages <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="active"><a href="{{ path('pricing') }}">Pricing tables</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Page Title -->
+<div class="page-title-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 wow fadeIn">
+				<i class="fa fa-dollar"></i>
+				<h1>Pricing Tables /</h1>
+				<p>Some pricing tables for your products or services</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Pricing 1 -->
+<div class="pricing-1-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 pricing-1-title wow fadeIn">
+				<h2>Pricing 1</h2>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-sm-4 pricing-1-box wow fadeInUp">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>12</strong><span> / month</span>
+					</div>
+					<h3>Basic</h3>
+					<h4>Freelancer</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>1000 lorem ipsum</li>
+							<li>Normal speed</li>
+							<li>500 dolor sit amet</li>
+							<li>300MB to save projects</li>
+							<li>750 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Buy now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 pricing-1-box pricing-1-box-best wow fadeInDown">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>35</strong><span> / month</span>
+					</div>
+					<h3>Ultimate</h3>
+					<h4>Best value</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>3000 lorem ipsum</li>
+							<li>2x speed</li>
+							<li>2000 dolor sit amet</li>
+							<li>500MB to save projects</li>
+							<li>900 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Buy now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 pricing-1-box wow fadeInUp">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>75</strong><span> / month</span>
+					</div>
+					<h3>Platinum</h3>
+					<h4>Big company</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>5000 lorem ipsum</li>
+							<li>4x speed</li>
+							<li>4000 dolor sit amet</li>
+							<li>900MB to save projects</li>
+							<li>1200 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Buy now</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Pricing 2 -->
+<div class="pricing-2-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 pricing-1-title wow fadeIn">
+				<h2>Pricing 2</h2>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-sm-3 pricing-1-box wow fadeInUp">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>12</strong><span> / month</span>
+					</div>
+					<h3>Basic</h3>
+					<h4>Freelancer</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>1000 lorem ipsum</li>
+							<li>Normal speed</li>
+							<li>500 dolor sit amet</li>
+							<li>300MB to save projects</li>
+							<li>750 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Sign up</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 pricing-1-box pricing-1-box-best wow fadeInDown">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>35</strong><span> / month</span>
+					</div>
+					<h3>Ultimate</h3>
+					<h4>Best value</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>3000 lorem ipsum</li>
+							<li>2x speed</li>
+							<li>2000 dolor sit amet</li>
+							<li>500MB to save projects</li>
+							<li>900 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Sign up</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 pricing-1-box wow fadeInUp">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>75</strong><span> / month</span>
+					</div>
+					<h3>Platinum</h3>
+					<h4>Big company</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>5000 lorem ipsum</li>
+							<li>4x speed</li>
+							<li>4000 dolor sit amet</li>
+							<li>900MB to save projects</li>
+							<li>1200 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Sign up</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 pricing-1-box wow fadeInUp">
+				<div class="pricing-1-box-inner">
+					<div class="pricing-1-box-price">
+						<span>$ </span><strong>120</strong><span> / month</span>
+					</div>
+					<h3>Gold</h3>
+					<h4>Bigger company</h4>
+					<div class="pricing-1-box-features">
+						<ul>
+							<li>7000 lorem ipsum</li>
+							<li>6x speed</li>
+							<li>6000 dolor sit amet</li>
+							<li>2GB to save projects</li>
+							<li>1500 hours of support</li>
+						</ul>
+					</div>
+					<div class="pricing-1-box-sign-up">
+						<a class="big-link-3" href="#">Sign up</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 footer-box wow fadeInUp">
+				<h4>About Us</h4>
+				<div class="footer-box-text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+					</p>
+					<p><a href="{{ path('homepage') }}">Read more...</a></p>
+				</div>
+			</div>
+			<div class="col-sm-3 footer-box wow fadeInDown">
+				<h4>Email Updates</h4>
+				<div class="footer-box-text footer-box-text-subscribe">
+					<p>Enter your email and you'll be one of the first to get new updates:</p>
+					<form role="form" action="{{ asset('assets/subscribe.php') }}" method="post">
+						<div class="form-group">
+							<label class="sr-only" for="subscribe-email">Email address</label>
+							<input type="text" name="email" placeholder="Email..." class="subscribe-email" id="subscribe-email">
+						</div>
+						<button type="submit" class="btn">Subscribe</button>
+					</form>
+					<p class="success-message"></p>
+					<p class="error-message"></p>
+				</div>
+			</div>
+			<div class="col-sm-3 footer-box wow fadeInUp">
+				<h4>Flickr Photos</h4>
+				<div class="footer-box-text flickr-feed"></div>
+			</div>
+			<div class="col-sm-3 footer-box wow fadeInDown">
+				<h4>Contact Us</h4>
+				<div class="footer-box-text footer-box-text-contact">
+					<p><i class="fa fa-map-marker"></i> Address: Via Principe Amedeo 9, 10100, Torino, TO, Italy</p>
+					<p><i class="fa fa-phone"></i> Phone: 0039 333 12 68 347</p>
+					<p><i class="fa fa-user"></i> Skype: Andia_Agency</p>
+					<p><i class="fa fa-envelope"></i> Email: <a href="">contact@andia.co.uk</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 wow fadeIn">
+				<div class="footer-border"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7 footer-copyright wow fadeIn">
+				<p>Copyright 2012 Andia - All rights reserved. Template by <a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
+			</div>
+			<div class="col-sm-5 footer-social wow fadeIn">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-pinterest"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+{% endblock %}
